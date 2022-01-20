@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using Ordering.Application;
 
 namespace Ordering.API
 {
@@ -18,6 +19,7 @@ namespace Ordering.API
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddApplicationServices();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
