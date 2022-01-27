@@ -4,7 +4,7 @@ using Ordering.Application.Features.Orders.Commands.UpdateOrder;
 using Ordering.Application.Features.Orders.Queries.GetOrdersList;
 using Ordering.Domain.Entities;
 
-namespace Ordering.Application.Mappings
+namespace Ordering.Application.Mapping
 {
     public class MappingProfile : Profile
     {
