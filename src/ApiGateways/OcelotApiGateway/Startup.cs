@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Ocelot.DependencyInjection;
+using Ocelot.Middleware;
 
 namespace OcelotApiGateway
 {
@@ -10,9 +12,10 @@ namespace OcelotApiGateway
     {
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddOcelot();
         }
 
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public async void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
@@ -28,6 +31,8 @@ namespace OcelotApiGateway
                     await context.Response.WriteAsync("Hello World!");
                 });
             });
+
+            await app.UseOcelot();
         }
     }
 }
