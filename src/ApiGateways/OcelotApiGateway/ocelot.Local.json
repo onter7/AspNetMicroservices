@@ -109,7 +109,7 @@
     },
     // Ordering API
     {
-      "DownstreamPathTemplate": "/api/v1/Ordering/{userName}",
+      "DownstreamPathTemplate": "/api/v1/Order/{userName}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -117,7 +117,7 @@
           "Port": "8004"
         }
       ],
-      "UpstreamPathTemplate": "/Ordering/{userName}",
+      "UpstreamPathTemplate": "/Order/{userName}",
       "UpstreamHttpMethod": [ "GET" ]
     }
   ],
