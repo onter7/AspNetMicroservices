@@ -1,5 +1,5 @@
 # AspNetMicroservices
-An educational project written as part of an online course [Microservices Architecture and Implementation on .NET 5](https://www.udemy.com/course/microservices-architecture-and-implementation-on-dotnet/)
+An educational project created as part of the online course [Microservices Architecture and Implementation on .NET 5](https://www.udemy.com/course/microservices-architecture-and-implementation-on-dotnet/)
 
 **General diagram of the project:**
 
